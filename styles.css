@@ -1,0 +1,453 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        list-style: none;
+        border: none;
+    }
+    
+     :root {
+        --blue: #3481ef;
+        --dark: #222429;
+        --orange: #ff4e00;
+        --yellow: #f7dd1e;
+        --gray: #979797;
+        --background: rgb(245, 246, 246);
+    }
+    
+    body {
+        background: var(--background);
+        font-family: "Poppins";
+    }
+    
+    main {
+        padding: 2% 5%;
+        margin: auto auto;
+        max-width: 1200px;
+    }
+    
+    main nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    main nav .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    main nav .logo-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+    
+    main nav .logo-container .logo-title {
+        position: absolute;
+        bottom: 0;
+        right: 4px;
+        font-weight: 600;
+    }
+    
+    main nav .nav-container .logo-navigation .navigation {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    main nav .nav-container .logo-navigation .navigation ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        color: var(--gray);
+        font-size: 0.96rem;
+        padding-left: 7rem;
+        width: 100%;
+    }
+    
+    main nav .nav-container .logo-navigation .navigation ul li {
+        margin-top: 1rem;
+    }
+    
+    main nav .logo-navigation .navigation ul li:hover,
+    main nav .logo-navigation .navigation .dropdown1:hover {
+        color: var(--dark);
+        cursor: pointer;
+    }
+    
+    main nav .logo-navigation .navigation .dropdown1 {
+        align-items: center;
+        background: none;
+        color: var(--gray);
+        font-size: 0.96rem;
+    }
+    
+    main nav .submit-socials {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        padding-left: 5rem;
+    }
+    
+    main nav .submit-socials .socials {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    main nav .submit-socials .submit {
+        margin-top: 1rem;
+    }
+    
+    main nav .submit-socials .socials .gmail {
+        width: 30px;
+        height: 30px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-top: 1rem;
+    }
+    
+    main nav .submit-socials .socials .facebook {
+        width: 50px;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    main nav .submit-socials .socials .gmail img,
+    main nav .submit-socials .socials .facebook img {
+        width: 30px;
+    }
+    
+    main nav .submit-socials .submit button {
+        background: none;
+        border: 1px solid var(--gray);
+        width: 8rem;
+        font-weight: 400;
+        padding: 1rem;
+        border-radius: 5px;
+        color: var(--gray);
+        cursor: pointer;
+    }
+    
+    main nav .logo-container {
+        background: var(--yellow);
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    .burger {
+        display: none;
+    }
+    
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background: var(--dark);
+        margin: 2px;
+    }
+    
+    main .description {
+        margin-top: 2rem;
+    }
+    
+    main .description .description-heading {
+        text-align: center;
+        color: var(--dark);
+    }
+    
+    main .description .description-p {
+        text-align: center;
+        color: var(--gray);
+        margin-top: 0.7rem;
+    }
+    
+    main .description .search-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55%;
+        height: 3rem;
+        background: white;
+        margin: 30px auto;
+        padding: 1rem;
+        gap: 10px;
+        border-radius: 5px;
+    }
+    
+    main .description .search-area .dropdown2 select {
+        padding: 8px;
+        border: 1px solid var(--gray);
+        border-radius: 5px;
+    }
+    
+    main .description .search-area input[type="search"] {
+        flex: 1
+    }
+    
+    main .description .search-area .bx-search {
+        font-size: 1.5rem;
+    }
+    
+    main .option ul {
+        display: flex;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+    
+    main .option ul li {
+        cursor: pointer;
+    }
+    
+    main .option ul .dot {
+        display: inline-block;
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background: var(--orange);
+        border-radius: 50%;
+        margin-top: -2px;
+        margin-left: 3px;
+    }
+    
+    main .option ul li .premium {
+        color: var(--orange);
+    }
+    
+    main .option ul li .free {
+        color: var(--blue);
+    }
+    
+    .Card_container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+    
+    .Card_container .card {
+        width: 20rem;
+        height: 23rem;
+        background: #fff;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .Card_container .card img {
+        margin-top: -1.5rem;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .Card_container .card .lock {
+        position: absolute;
+        background-color: rgba(245, 246, 246, 0.3);
+        width: 17.5rem;
+        height: 13rem;
+        margin-top: -1.45rem;
+        border-radius: 20px;
+    }
+    
+    .Card_container .card .lock p {
+        color: var(--gray);
+        font-size: 12px;
+        margin-left: 7rem;
+        margin-top: 1rem;
+        font-weight: 600;
+    }
+    
+    .Card_container .card .lock p span i {
+        margin-right: 0.5rem;
+    }
+    
+    .Card_container .card .container h4 span {
+        font-size: 3rem;
+        font-weight: 300;
+        color: var(--dark);
+    }
+    
+    .Card_container .card .container h4 {
+        color: var(--gray);
+        font-weight: 300;
+    }
+    
+    .discovery-collection {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .discovery-collection .images1,
+    .discovery-collection .images2,
+    .discovery-collection .images3,
+    .discovery-collection .images4 {
+        border-radius: 10px;
+        width: 5rem;
+        padding: 2px;
+        background: #979797;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    .discovery-collection .images1 img,
+    .discovery-collection .images2 img,
+    .discovery-collection .images3 img,
+    .discovery-collection .images4 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .photo-collection {
+        position: relative;
+    }
+    
+    .discovery-collection .images3 {
+        left: 100px
+    }
+    
+    .discovery-collection .images2 {
+        left: 50px
+    }
+    
+    .discovery-collection .images4 {
+        left: 150px;
+    }
+    
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .chevron-move {
+        display: flex;
+    }
+    
+    .bottom-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bx-chevron-left,
+    .bx-chevron-right,
+    .numbers {
+        width: 2rem;
+        height: 30px;
+        margin: 5px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bx-chevron-left,
+    .bx-chevron-right {
+        font-size: 2rem;
+    }
+    
+    @media screen and (max-width: 820px) {
+        nav {
+            width: 100%;
+        }
+        .bottom {
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            margin-left: 0;
+            flex-direction: column;
+        }
+        main nav .submit-socials {
+            display: block;
+        }
+        .Card_container {
+            margin-left: 1.12rem;
+        }
+        .search-area .dropdown2 {
+            display: none;
+        }
+        .search-area {
+            width: 100% !important;
+            /* margin-left: 2rem !important; */
+        }
+        .nav-container {
+            /* display: none !important; */
+            position: absolute;
+            right: 1rem;
+            top: 5rem;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+        }
+        .open {
+            display: block !important;
+            height: 50vh !important;
+        }
+        .burger {
+            display: block;
+            cursor: pointer;
+        }
+        .photo-collection {
+            left: 1rem;
+        }
+        .collection-link {
+            position: absolute;
+            left: 20px;
+        }
+        .discovery-collection {
+            position: ;
+        }
+        .photo-collection {
+            display: none;
+        }
+        .bottom-right {
+            position: relative;
+        }
+        .photo-navigation {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: -7rem;
+            top: 2rem;
+        }
+        main nav .nav-container .logo-navigation .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            height: 0;
+            overflow: hidden;
+            transition: 300ms height ease-in-out;
+            border-radius: 20px;
+            width: 100%;
+        }
+        main nav .nav-container .logo-navigation .navigation ul {
+            display: block;
+        }
+        main .description {
+            margin-top: 4rem;
+        }
+    }
